@@ -139,6 +139,7 @@
 [
   "bitstruct"
   "enum"
+  "constdef"
   "faultdef"
   "interface"
   "struct"
