@@ -387,11 +387,11 @@
 [
   (line_comment)
   (block_comment)
-] @comment @spell
+] @comment
 
 (doc_comment) @comment.documentation
 
-(doc_comment_text) @spell
+(doc_comment_text)
 
 (doc_comment_contract
   name: (_) @attribute)
@@ -401,16 +401,13 @@
     (ident)
     (ct_ident)
     (hash_ident)
-  ] @variable.parameter
-  (#set! priority 110))
+  ] @variable.parameter)
 
 (doc_comment_contract
   [
     ":"
     "?"
-  ] @comment.documentation
-  (#set! priority 110))
+  ] @comment.documentation)
 
 (doc_comment_contract
-  description: (_) @comment.documentation
-  (#set! priority 110))
+  description: (_) @comment.documentation)
