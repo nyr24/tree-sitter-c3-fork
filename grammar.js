@@ -487,9 +487,9 @@ export default grammar({
     faultdef_declaration: $ => prec(10, seq(
       optional($.doc_comment),
       'faultdef',
-      sepTrailing1(seq($.const_ident, optional($.attributes)), ','),
+      commaSepTrailing1(seq($.const_ident, optional($.attributes))),
       ';'
-    )),
+    ),
 
     // Typedef
     // -------------------------
