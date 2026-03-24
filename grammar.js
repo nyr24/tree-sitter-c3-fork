@@ -489,7 +489,7 @@ export default grammar({
       'faultdef',
       commaSepTrailing1(seq($.const_ident, optional($.attributes))),
       ';'
-    ),
+    )),
 
     // Typedef
     // -------------------------
