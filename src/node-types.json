@@ -18239,10 +18239,6 @@
     "named": false
   },
   {
-    "type": "isz",
-    "named": false
-  },
-  {
     "type": "len",
     "named": false
   },
@@ -18301,6 +18297,10 @@
   },
   {
     "type": "switch",
+    "named": false
+  },
+  {
+    "type": "sz",
     "named": false
   },
   {

@@ -1589,7 +1589,7 @@ export default grammar({
       'float128',
       'iptr',
       'uptr',
-      'isz',
+      'sz',
       'usz',
       'fault',
       'any',
