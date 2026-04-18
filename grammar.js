@@ -1561,7 +1561,7 @@ export default grammar({
     type_access_expr: $ => seq(
       prec(PREC.FIELD, seq(
         field('argument', $._type_expr),
-        '.',
+        '::',
       )),
       $._access_ident_expr,
     ),
