@@ -401,6 +401,7 @@ export default grammar({
       $.ct_echo_stmt,
       $.ct_include_stmt,
       $.ct_exec_stmt,
+      $.ct_expand_stmt,
 
       $.struct_declaration,
       $.enum_declaration,
@@ -783,6 +784,7 @@ export default grammar({
       $.asm_block_stmt,
 
       $.ct_echo_stmt,
+      $.ct_expand_stmt,
       $.ct_assert_stmt,
       $.ct_if_stmt,
       $.ct_switch_stmt,
@@ -1140,6 +1142,10 @@ export default grammar({
     // Compile Time Exec Statement
     // -------------------------
     ct_exec_stmt: $ => seq('$exec', '(', commaSep($._expr), ')', optional($.attributes), ';'),
+
+    // Compile Time Expand Statement
+    // -------------------------
+    ct_expand_stmt: $ => seq('$expand', '(', $._expr, ')', ';'),
 
     // Compile Time Echo Statement
     // -------------------------

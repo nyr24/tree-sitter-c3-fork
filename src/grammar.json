@@ -1821,6 +1821,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "ct_expand_stmt"
+        },
+        {
+          "type": "SYMBOL",
           "name": "struct_declaration"
         },
         {
@@ -4362,6 +4366,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "ct_expand_stmt"
+        },
+        {
+          "type": "SYMBOL",
           "name": "ct_assert_stmt"
         },
         {
@@ -6502,6 +6510,31 @@
               "type": "BLANK"
             }
           ]
+        },
+        {
+          "type": "STRING",
+          "value": ";"
+        }
+      ]
+    },
+    "ct_expand_stmt": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "$expand"
+        },
+        {
+          "type": "STRING",
+          "value": "("
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_expr"
+        },
+        {
+          "type": "STRING",
+          "value": ")"
         },
         {
           "type": "STRING",
