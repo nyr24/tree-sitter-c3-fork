@@ -9552,11 +9552,11 @@
                 "members": [
                   {
                     "type": "STRING",
-                    "value": "$typeof"
+                    "value": "$Typeof"
                   },
                   {
                     "type": "STRING",
-                    "value": "$typefrom"
+                    "value": "$Typefrom"
                   },
                   {
                     "type": "STRING",

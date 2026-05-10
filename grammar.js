@@ -1602,8 +1602,8 @@ export default grammar({
       $.ct_type_ident,
       seq(
         choice(
-          '$typeof',
-          '$typefrom',
+          '$Typeof',
+          '$Typefrom',
           '$evaltype', // Deprecated >= 0.7.2
         ),
         $.paren_expr,

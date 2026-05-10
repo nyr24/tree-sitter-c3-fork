@@ -2344,15 +2344,15 @@
         "required": true,
         "types": [
           {
+            "type": "$Typefrom",
+            "named": false
+          },
+          {
+            "type": "$Typeof",
+            "named": false
+          },
+          {
             "type": "$evaltype",
-            "named": false
-          },
-          {
-            "type": "$typefrom",
-            "named": false
-          },
-          {
-            "type": "$typeof",
             "named": false
           },
           {
@@ -17639,6 +17639,14 @@
     "named": false
   },
   {
+    "type": "$Typefrom",
+    "named": false
+  },
+  {
+    "type": "$Typeof",
+    "named": false
+  },
+  {
     "type": "$alignof",
     "named": false
   },
@@ -17760,14 +17768,6 @@
   },
   {
     "type": "$switch",
-    "named": false
-  },
-  {
-    "type": "$typefrom",
-    "named": false
-  },
-  {
-    "type": "$typeof",
     "named": false
   },
   {
